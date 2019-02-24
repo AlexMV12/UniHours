@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <!-- Main scene -->
-<VBox fx:id="mainWindow" fx:controller="main.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="20">
+<VBox fx:id="mainWindow" fx:controller="main.ControllerMainScene" xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="20">
     <Label text="Welcome in UniHours!"/>
     <Label text="What do you want to do?"/>
 
