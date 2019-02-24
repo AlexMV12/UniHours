@@ -35,7 +35,7 @@ public class ControllerMainScene implements Initializable {
     }
 
     @FXML
-    private void showTable(ActionEvent e) throws IOException {
+    private void showTable() throws IOException {
         Stage stage = (Stage) buttonShowTable.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/showTable.fxml"));
         Parent root = loader.load();

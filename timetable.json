@@ -1,0 +1,99 @@
+{
+	"rows": [
+        { "hour":"8.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"9.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"10.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"11.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"12.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"13.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"14.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"15.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"16.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"17.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"18.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        },
+        {
+        "hour":"19.30",
+        "mondaySubj":"ex",
+        "tuesdaySubj": "ex",
+        "wednesdaySubj": "ex", 
+        "thursdaySubj": "ex",
+        "fridaySubj": "ex"
+        }
+    ]
+}

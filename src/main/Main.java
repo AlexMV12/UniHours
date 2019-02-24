@@ -16,7 +16,7 @@ public class Main extends Application {
         Parent root = fxmlLoader.load();
 
         primaryStage.setTitle("UniHours");
-        primaryStage.setScene(new Scene(root, 500, 475));
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
     }
