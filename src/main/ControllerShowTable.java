@@ -38,6 +38,8 @@ public class ControllerShowTable implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        // First, create all the columns for the table...
+
         List<TableColumn> tableColumns = new ArrayList<>();
 
         TableColumn hourColumn = new TableColumn("Hour");
@@ -64,9 +66,15 @@ public class ControllerShowTable implements Initializable {
         fridayColumn.setCellValueFactory(new PropertyValueFactory<>("fridaySubj"));
         tableColumns.add(fridayColumn);
 
+        // ... then add them to the Table and fetch the rows through the static method getTimeRow().
+
         hoursTable.getColumns().addAll(tableColumns);
 
         hoursTable.getItems().addAll(JSONReader.getTimeRow());
+
+        /* Now, for each column, try to pair the content of the cell with the hashmap which links subjects and
+           colours.
+         */
 
         HashMap<String, Colour> subjects = JSONReader.getSubjects();
 

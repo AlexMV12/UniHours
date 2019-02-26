@@ -12,6 +12,21 @@ import java.util.List;
 
 public class JSONReader {
 
+    /* The provided file "timetable.json" is an example of a possible time table.
+       First, a list of all the subjects and a corresponding colour is chosen.
+       Then, the time table is provided: the "name" of the subject is an acronym.
+       Another approach would be to specify the various hour by day, so do something like
+       "monday": [ 8.30 : "subj_name"
+                    ... ]
+
+       However, the row approach is suitable for a Table in JavaFX.
+
+     */
+
+
+    /* This method returns an HashMap with the name of the subject and its colour
+       It's used to quicly set the text colour in the output table
+     */
     public static HashMap<String, Colour> getSubjects() {
 
         JSONParser parser = new JSONParser();
@@ -30,6 +45,7 @@ public class JSONReader {
                 try {
                     colour = Colour.valueOf((String) jsonSub.get("colour"));
                 } catch (IllegalArgumentException e) {
+                    // If I can't read a good value, set it to black
                     colour = Colour.BLACK;
                 }
                 String name = (String) jsonSub.get("name");
@@ -42,6 +58,12 @@ public class JSONReader {
 
         return results;
     }
+
+    /* This method returns the rows that will be printed in the table, in ShowTable
+       A row is composed by the starting hour, subject on monday in that hour, subject on tuesday in that hour etc.
+       One clever approach would be to use an ArrayList, but considering that, usually, a five days week is used
+       (six days at maximum) I chose to explicitly write the variables.
+     */
 
     public static List<TimeRow> getTimeRow() {
 
