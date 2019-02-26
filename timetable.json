@@ -1,99 +1,116 @@
 {
+    "subjects": [
+        { "name": "MIDA",
+          "colour": "PURPLE"
+        },
+        { "name": "ACA",
+          "colour": "ORANGE"
+        },
+        { "name": "CIN",
+          "colour": "BLUE"
+        },
+        { "name": "FOR",
+          "colour": "RED"
+        },
+        { "name": "SEC",
+          "colour": "GREEN"
+        }
+    ],
 	"rows": [
         { "hour":"8.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"MIDA",
+        "tuesdaySubj": "",
+        "wednesdaySubj": "", 
+        "thursdaySubj": "MIDA",
+        "fridaySubj": ""
         },
         {
         "hour":"9.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"MIDA",
+        "tuesdaySubj": "",
+        "wednesdaySubj": "", 
+        "thursdaySubj": "MIDA",
+        "fridaySubj": ""
         },
         {
         "hour":"10.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"ACA",
+        "tuesdaySubj": "",
+        "wednesdaySubj": "ACA", 
+        "thursdaySubj": "SEC",
+        "fridaySubj": "SEC"
         },
         {
         "hour":"11.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"ACA",
+        "tuesdaySubj": "CIN",
+        "wednesdaySubj": "ACA", 
+        "thursdaySubj": "SEC",
+        "fridaySubj": "SEC"
         },
         {
         "hour":"12.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"",
+        "tuesdaySubj": "CIN",
+        "wednesdaySubj": "", 
+        "thursdaySubj": "",
+        "fridaySubj": "FOR"
         },
         {
         "hour":"13.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"",
+        "tuesdaySubj": "CIN",
+        "wednesdaySubj": "", 
+        "thursdaySubj": "",
+        "fridaySubj": "FOR"
         },
         {
         "hour":"14.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"CIN",
+        "tuesdaySubj": "",
+        "wednesdaySubj": "FOR", 
+        "thursdaySubj": "",
+        "fridaySubj": ""
         },
         {
         "hour":"15.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"CIN",
+        "tuesdaySubj": "",
+        "wednesdaySubj": "FOR", 
+        "thursdaySubj": "",
+        "fridaySubj": ""
         },
         {
         "hour":"16.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"",
+        "tuesdaySubj": "MIDA",
+        "wednesdaySubj": "MIDA", 
+        "thursdaySubj": "",
+        "fridaySubj": ""
         },
         {
         "hour":"17.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"",
+        "tuesdaySubj": "MIDA",
+        "wednesdaySubj": "MIDA", 
+        "thursdaySubj": "",
+        "fridaySubj": ""
         },
         {
         "hour":"18.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"",
+        "tuesdaySubj": "",
+        "wednesdaySubj": "", 
+        "thursdaySubj": "",
+        "fridaySubj": ""
         },
         {
         "hour":"19.30",
-        "mondaySubj":"ex",
-        "tuesdaySubj": "ex",
-        "wednesdaySubj": "ex", 
-        "thursdaySubj": "ex",
-        "fridaySubj": "ex"
+        "mondaySubj":"",
+        "tuesdaySubj": "",
+        "wednesdaySubj": "", 
+        "thursdaySubj": "",
+        "fridaySubj": ""
         }
     ]
 }

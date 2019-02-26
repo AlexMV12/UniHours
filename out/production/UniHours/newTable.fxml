@@ -6,10 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox prefHeight="400" prefWidth="600">
-    <HBox alignment="CENTER">
-        <Label text="Here you can insert a new table"/>
-    </HBox>
-
+<?import javafx.scene.control.Button?>
+<VBox prefHeight="500" prefWidth="650" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ControllerCreateNewTable" spacing="15" alignment="CENTER">
+    <Label text="Create a new table" />
+    <Button fx:id="backToMainMenu" text="Back to main menu" onAction="#backToMainMenu" />
 </VBox>
 

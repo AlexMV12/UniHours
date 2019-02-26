@@ -1,23 +1,21 @@
 package main;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ControllerShowTable implements Initializable {
@@ -40,28 +38,57 @@ public class ControllerShowTable implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+        List<TableColumn> tableColumns = new ArrayList<>();
+
         TableColumn hourColumn = new TableColumn("Hour");
         hourColumn.setCellValueFactory(new PropertyValueFactory<>("hour"));
+        tableColumns.add(hourColumn);
 
         TableColumn mondayColumn = new TableColumn("Monday");
-        mondayColumn.setCellValueFactory(new PropertyValueFactory<>("mondaySubj"));
+        mondayColumn.setCellValueFactory(new PropertyValueFactory<String, String>("mondaySubj"));
+        tableColumns.add(mondayColumn);
 
         TableColumn tuesdayColumn = new TableColumn("Tuesday");
         tuesdayColumn.setCellValueFactory(new PropertyValueFactory<>("tuesdaySubj"));
+        tableColumns.add(tuesdayColumn);
 
         TableColumn wednesdayColumn = new TableColumn("Wednesday");
         wednesdayColumn.setCellValueFactory(new PropertyValueFactory<>("wednesdaySubj"));
+        tableColumns.add(wednesdayColumn);
 
         TableColumn thursdayColumn = new TableColumn("Thursday");
         thursdayColumn.setCellValueFactory(new PropertyValueFactory<>("thursdaySubj"));
+        tableColumns.add(thursdayColumn);
 
         TableColumn fridayColumn = new TableColumn("Friday");
         fridayColumn.setCellValueFactory(new PropertyValueFactory<>("fridaySubj"));
+        tableColumns.add(fridayColumn);
 
-        hoursTable.getColumns().addAll(hourColumn, mondayColumn, tuesdayColumn, wednesdayColumn, thursdayColumn, fridayColumn);
+        hoursTable.getColumns().addAll(tableColumns);
 
         hoursTable.getItems().addAll(JSONReader.getTimeRow());
 
+        HashMap<String, Colour> subjects = JSONReader.getSubjects();
+
+        for (TableColumn tableColumn : tableColumns) {
+            tableColumn.setCellFactory(new Callback<TableColumn, TableCell>() {
+                public TableCell call(TableColumn param) {
+                    return new TableCell<String, String>() {
+
+                        @Override
+                        public void updateItem(String item, boolean empty) {
+                            super.updateItem(item, empty);
+                            if (!isEmpty()) {
+                                Colour colour = subjects.getOrDefault(item, Colour.BLACK);
+                                this.setTextFill(Color.valueOf(colour.toString()));
+                                setText(item);
+                            }
+                        }
+                    };
+                }
+            });
+
+        }
 
     }
 }
